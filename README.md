@@ -19,10 +19,7 @@ SAP Services detection via nmap probes
 This article aims at showing how to improve the capability of the nmap
 network scanner to detect SAP services. This is by no mean a complete
 and 100% exact way of doing service detection as a lot of corner cases
-exist that are not covered in this text. If you want a more
-comprehensive way to do SAP services detection and even much more, the
-[ERPScan Monitoring Suite](https://erpscan.com/products/erpscan-security-monitoring-suite-for-sap/)
-is a good starting point with its port scanner feature.
+exist that are not covered in this text. 
 
 
 ## How nmap can help us
