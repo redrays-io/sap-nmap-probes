@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 #
 # Generate a list of SAP TCP ports
 #
@@ -14,6 +14,9 @@ from pprint import pprint
 import argparse
 import sys
 import re
+
+# Python 3, xrange is now named range
+xrange = range
 
 help_desc='''
 Script used to generate list of SAP services ports.
@@ -188,7 +191,7 @@ def generate_ports(p, maxi):
     merged_list = list()
     for e in p:
         merged_list += expand_ports(e, maxi)
-    print ','.join(set(merged_list))
+    print (','.join(set(merged_list)))
 
 def print_ports(flt=None, ssl=False):
     pl = list()
@@ -256,7 +259,7 @@ if __name__ == '__main__':
 
     ports_active = list()
     if args.instance > 100:
-        print "Instance number can be maximum 100."
+        print ("Instance number can be maximum 100.")
         exit(0)
 
     if args.verbose:
